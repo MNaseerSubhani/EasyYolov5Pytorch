@@ -31,14 +31,31 @@ Clone this repository to your gdrive
 
 ## Setup the parameters and yolo settings
 Setting up the yolo with different instance name as your project required, change the parameters according to custom training,
-![set parameters](tmp/1.PNG)
+
+  ```
+  from google.colab import drive
+  drive.mount('/content/drive')
+  ```
 
 ## Create dataset.yaml 
 Add each class name in "names" list variable, 
-![generate dataset.yaml](tmp/2.PNG)
+
+```
+%cd {instance_name}
+with open("dataset.yaml", "w") as f:   
+    f.write(f"""path: ../{instance_name}/data  # dataset root dir
+train: train/images  # train images (relative to 'path') 128 images
+val: test/images  # val images (relative to 'path') 128 images
+test:  # test images (optional)\n\n
+nc: {num_of_classes}  # number of classes\n\n
+names: [ 'class1', 'class2', 'classN' ]""")
+%cd ..
+```
 
 ## download pretrained model
-![download pretrained model](tmp/3.PNG)
+```
+!wget https://github.com/ultralytics/yolov5/releases/download/v5.0/{model}.pt
+```
 
 
 ## Upload the dataset to instance's name folder
