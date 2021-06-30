@@ -2,21 +2,23 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18dcCM1js2QSAB-GcPFOLg25vYUi2sB6B?usp=sharing)
 
-This repo contains a simple notebook **TheEasyYolo.ipynb** to train multiple instance of YoloV3 and YoloV4 with their tiny versions. You can train yolo with initilization of  different parameters like number of classes, channels, width and height. 
+This repo contains a simple notebook **EasyYolov5Pytorch.ipynb** to train multiple instance of YoloV5  with pytorch. 
 
 The directory structure:
     
-    ├── TheEasyYolo
+    ├── EasyYolov5Pytorch
     ├────── Instance-1
     ├─────────── data
     ├─────────────── train
+    ├──────────────────── images
+    ├──────────────────── labels
     ├─────────────── test
     ├────── Instance-2
     .
     .
     ├────── Instance-N
-    ├────── darknet
-    ├────── TheEasyYolo.ipynb
+    ├────── yolov5
+    ├────── EasyYolov5Pytorch.ipynb
     ├────── README.md
     
 
@@ -24,15 +26,12 @@ The directory structure:
 ## Setup on Google Drive
 Link notebook with your google drive for saving checkpoint,
 
-![link to gdrive](temp/gdrive.PNG)
-
 ## Clone this repo
 Clone this repository to your gdrive
 
 ## Setup the parameters and yolo settings
 Setting up the yolo with different instance name as your project required, change the parameters according to custom training, 
 
-![Setup yolo parameters](temp/settings.PNG)
 
 
 
@@ -42,8 +41,10 @@ The data structure should like this:
   
     ├── data
     ├────── train
-    ├──────── --.jpg
-    ├──────── --.txt
+    ├──────────── images
+    ├──────────────── --.jpg
+    ├──────────── labels
+    ├──────────────── --.txt
     ├───────test
     
     
