@@ -30,11 +30,14 @@ Link notebook with your google drive for saving checkpoint,
 Clone this repository to your gdrive
 
 ## Setup the parameters and yolo settings
-Setting up the yolo with different instance name as your project required, change the parameters according to custom training, 
+Setting up the yolo with different instance name as your project required, change the parameters according to custom training,
+![set parameters](tmp/1.PNG)
 
 ## Create dataset.yaml 
+![generate dataset.yaml](tmp/2.PNG)
 
 ## download pretrained model
+![download pretrained model](tmp/3.PNG)
 
 
 ## Upload the dataset to instance's name folder
@@ -51,5 +54,5 @@ The data structure should like this:
     
     
 
-![create train.names file](temp/names_png.PNG)
+
 
