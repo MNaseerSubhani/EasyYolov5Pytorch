@@ -32,7 +32,9 @@ Clone this repository to your gdrive
 ## Setup the parameters and yolo settings
 Setting up the yolo with different instance name as your project required, change the parameters according to custom training, 
 
+## Create dataset.yaml 
 
+## download pretrained model
 
 
 ## Upload the dataset to instance's name folder
@@ -48,9 +50,6 @@ The data structure should like this:
     ├───────test
     
     
-
-
-## Generate train.names file and add all classes names
 
 ![create train.names file](temp/names_png.PNG)
 
