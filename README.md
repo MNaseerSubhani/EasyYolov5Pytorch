@@ -34,6 +34,7 @@ Setting up the yolo with different instance name as your project required, chang
 ![set parameters](tmp/1.PNG)
 
 ## Create dataset.yaml 
+Add each class name in "names" list variable, 
 ![generate dataset.yaml](tmp/2.PNG)
 
 ## download pretrained model
