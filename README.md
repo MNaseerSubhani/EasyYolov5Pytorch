@@ -60,7 +60,7 @@ names: [ 'class1', 'class2', 'classN' ]""")
 
 ## Upload the dataset to instance's name folder
 After initilization the parameters of yolo, gather the dataset and label them according to yolo's label formating, and put the "data" folder in instance's name folder.
-The data structure should like this:
+The data structure should be like this:
   
     ├── data
     ├────── train
