@@ -71,6 +71,11 @@ The data structure should be like this:
     ├───────test
     
     
+    
+## convert model to tflite 
+```
+!python3.8 export.py --weights ../{instance_name}/best_1.pt --include tflite --int8
+```
 
 
 
