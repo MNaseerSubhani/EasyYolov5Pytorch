@@ -81,7 +81,7 @@ The data structure should be like this:
     
 ## convert model to tflite 
 ```
-!python3.8 export.py --weights ../{instance_name}/best_1.pt --include tflite --int8
+!python3 export.py --weights ../{instance_name}/best.pt --include tflite --optimize --nms #--int8
 ```
 
 
