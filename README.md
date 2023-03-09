@@ -2,6 +2,13 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/18dcCM1js2QSAB-GcPFOLg25vYUi2sB6B?usp=sharing)
 
+## Update
+update to lastest by using this command:
+```
+!git pull origin master
+!git checkout master
+```
+
 This repo contains a simple notebook **EasyYolov5Pytorch.ipynb** to train multiple instance of YoloV5  with pytorch. 
 
 The directory structure:
