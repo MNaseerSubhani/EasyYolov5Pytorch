@@ -76,7 +76,10 @@ The data structure should be like this:
     ├──────────── labels
     ├──────────────── --.txt
     ├───────test
-    
+## Update to master branch
+```
+git checkout -f master
+```
     
     
 ## convert model to tflite 
