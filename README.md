@@ -87,5 +87,12 @@ git checkout -f master
 !python3 export.py --weights ../{instance_name}/best.pt --include tflite --optimize --nms #--int8
 ```
 
+## convert model to tfjs 
+```
+!python3 export.py --weights ../{instance_name}/best.pt --include tfjs --optimize --nms #--int8
+```
 
-
+## convert model to torchscript 
+```
+!python3 export.py --weights ../{instance_name}/best.pt --include torchscript --optimize --nms #--int8
+```
